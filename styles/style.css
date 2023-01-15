@@ -12,6 +12,7 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  border: 0.5px solid red;
 }
 
 .btn {
@@ -92,8 +93,8 @@
 }
 /* Header Styles End */
 
-/* Features Styles Start */
-.features {
+/* Quick List Styles Start */
+.quick-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 73px;
@@ -101,25 +102,54 @@
   padding: 85px 60px;
 }
 
-.features .features-gallery {
+.quick-list .quick-list-gallery {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   grid-gap: 24px;
 }
 
-.features .features-info .features-title {
+.quick-list .quick-list-info .quick-list-title {
   color: #727272;
   font-size: 45px;
   font-weight: 600;
   line-height: 53px;
 }
 
-.features .features-info .features-title .black {
+.quick-list .quick-list-info .quick-list-title .black {
   color: #131313;
 }
 
-.features .features-info .features-title .orange {
+.quick-list .quick-list-info .quick-list-title .orange {
   color: #ff900e;
+}
+
+.quick-list .quick-list-info .quick-list-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 24px 0 32px 0;
+}
+/* Quick List Styles End */
+
+/* Features Styles Start */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 45px;
+}
+
+.features-info {
+  padding-right: 100px;
+}
+
+.features .features-info .features-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 53px;
+  border-left: 5px solid #ff900e;
+  padding: 0 30% 0 10px;
 }
 
 .features .features-info .features-description {
@@ -127,6 +157,148 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  padding: 24px 0 32px 0;
+  padding: 24px 0 30px 0;
+}
+
+.features-items .item {
+  padding: 30px 42px 30px 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.features-items .item .item-title {
+  color: #131313;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.features-items .item .item-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.features .features-img {
+  width: 100%;
+  position: relative;
+}
+.features .features-img {
+  background: url("../images/architect.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features .features-img .btn {
+  position: absolute;
+  font-size: 45px;
+  font-weight: bold;
+  padding: 40px 40px;
+  z-index: 100;
+  bottom: -70px;
+  left: -70px;
+}
+
+.features .features-img .btn > p {
+  font-size: 25px;
+  font-weight: 400;
 }
 /* Features Styles End */
+
+/* Facts Styles Start */
+.facts {
+  padding: 130px 0;
+}
+
+.facts .facts-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.facts .facts-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 24px;
+  margin-right: 60%;
+}
+
+.facts .facts-boxs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 100px;
+  justify-items: center;
+}
+
+.facts .facts-boxs .box {
+  text-align: center;
+  padding: 45px 35px 59px 35px;
+  border: 0.1px solid #ff900e;
+  border-radius: 8px;
+}
+
+.facts .facts-boxs .box:hover {
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.facts .facts-boxs .box h3 {
+  color: #424;
+  font-size: 45px;
+  font-weight: 600;
+  padding: 10px 0 5px 0;
+}
+
+.facts .facts-boxs .box p {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* Facts Styles End */
+
+/* Our Sponsors Styles Start */
+.our-sponsors {
+  padding: 30px 0 130px 0;
+  text-align: center;
+}
+
+.our-sponsors .our-sponsors-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.our-sponsors .our-sponsors-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 24px 30% 50px 30%;
+}
+
+.our-sponsors .sponsors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-sponsors .sponsor img {
+  width: 100%;
+}
+/* Our Sponsors Styles End */
+
+/* Footer Styles Start */
+.footer {
+  text-align: center;
+  color: #424242;
+  background: #fff4e7;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  padding: 40px 0;
+  /* margin-bottom: 200px; */
+}
+/* Footer Styles End */
