@@ -1,0 +1,132 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* Common CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: #ffffff;
+  background: #ff900e;
+  font-size: 20px;
+  border: none;
+  padding: 20px 25px;
+  border-radius: 8px;
+  transition: 1s;
+}
+
+.btn:hover {
+  color: #ff900e;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* Header Styles Start */
+.header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 50px 0;
+}
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .nav-title {
+  color: #131313;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  padding-left: 34px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 400;
+}
+
+/* Banner */
+.banner .banner-info {
+  text-align: center;
+  padding: 100px 20% 50px 20%;
+}
+
+.banner .banner-info .banner-title {
+  color: #131313;
+  font-size: 64px;
+  font-weight: bold;
+}
+.banner .banner-info .banner-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 32px 0;
+}
+
+.banner .banner-img {
+  width: 100%;
+}
+
+.banner .banner-img img {
+  width: 100%;
+  object-fit: cover;
+}
+/* Header Styles End */
+
+/* Features Styles Start */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 73px;
+  align-items: center;
+  padding: 85px 60px;
+}
+
+.features .features-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 24px;
+}
+
+.features .features-info .features-title {
+  color: #727272;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 53px;
+}
+
+.features .features-info .features-title .black {
+  color: #131313;
+}
+
+.features .features-info .features-title .orange {
+  color: #ff900e;
+}
+
+.features .features-info .features-description {
+  color: #727272;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 24px 0 32px 0;
+}
+/* Features Styles End */
